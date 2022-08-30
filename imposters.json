@@ -1,0 +1,150 @@
+{
+  "imposters": [
+    {
+      "protocol": "http",
+      "port": 8000,
+      "recordRequests": false,
+      "stubs": [
+        {
+          "predicates": [
+            {
+              "deepEquals": {
+                "path": "/test"
+              }
+            },
+            {
+              "deepEquals": {
+                "query": {}
+              }
+            },
+            {
+              "deepEquals": {
+                "body": ""
+              }
+            },
+            {
+              "deepEquals": {
+                "method": "GET"
+              }
+            },
+            {
+              "deepEquals": {
+                "headers": {
+                  "Host": "localhost:8000",
+                  "User-Agent": "curl/7.79.1",
+                  "Accept": "*/*"
+                }
+              }
+            }
+          ],
+          "responses": [
+            {
+              "is": {
+                "statusCode": 200,
+                "headers": {
+                  "Content-Type": "application/json",
+                  "Date": "Tue, 30 Aug 2022 08:48:08 GMT",
+                  "Content-Length": "71",
+                  "Connection": "close"
+                },
+                "body": {
+                  "message": "GET:2022-08-30 17:48:08.890704 +0900 JST m=+539.158179795"
+                },
+                "_mode": "text"
+              }
+            }
+          ]
+        },
+        {
+          "predicates": [
+            {
+              "deepEquals": {
+                "path": "/test"
+              }
+            },
+            {
+              "deepEquals": {
+                "query": {}
+              }
+            },
+            {
+              "deepEquals": {
+                "body": ""
+              }
+            },
+            {
+              "deepEquals": {
+                "method": "GET"
+              }
+            },
+            {
+              "deepEquals": {
+                "headers": {
+                  "Host": "localhost:8000",
+                  "User-Agent": "curl/7.79.1",
+                  "Accept": "*/*",
+                  "Content-Type": "text/html"
+                }
+              }
+            }
+          ],
+          "responses": [
+            {
+              "is": {
+                "statusCode": 200,
+                "headers": {
+                  "Content-Type": "application/json",
+                  "Date": "Tue, 30 Aug 2022 08:48:24 GMT",
+                  "Content-Length": "71",
+                  "Connection": "close"
+                },
+                "body": {
+                  "message": "GET:2022-08-30 17:48:24.863964 +0900 JST m=+555.131050122"
+                },
+                "_mode": "text"
+              }
+            }
+          ]
+        },
+        {
+          "predicates": [
+            {
+              "deepEquals": {
+                "path": "/test"
+              }
+            },
+            {
+              "deepEquals": {
+                "method": "GET"
+              }
+            },
+            {
+              "contains": {
+                "headers": {
+                  "Content-Type": "MounteBank"
+                }
+              }
+            }
+          ],
+          "responses": [
+            {
+              "is": {
+                "statusCode": 200,
+                "headers": {
+                  "Content-Type": "application/json",
+                  "Date": "Tue, 30 Aug 2022 08:48:08 GMT",
+                  "Content-Length": "71",
+                  "Connection": "close"
+                },
+                "body": {
+                  "message": "Test MounteBank"
+                },
+                "_mode": "text"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

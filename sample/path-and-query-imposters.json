@@ -1,0 +1,24 @@
+{
+  "imposters": [
+    {
+      "port": 8000,
+      "protocol": "http",
+      "stubs": [
+        {
+          "responses": [{
+            "proxy": {
+              "to": "http://localhost:8080",
+              "predicateGenerators": [{
+                "matches": {
+                  "path": true,
+                  "query": { "q": true }
+                }
+              }],
+              "mode": "proxyOnce"
+            }
+          }]
+        }
+      ]
+    }
+  ]
+}
