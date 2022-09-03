@@ -1,0 +1,236 @@
+{
+  "port": 8000,
+  "protocol": "http",
+  "stubs": [
+    {
+      "meta": {
+        "dir": "stubs/1662196498241-41288-1"
+      }
+    },
+    {
+      "meta": {
+        "dir": "stubs/1662196502020-41288-3"
+      },
+      "predicates": [
+        {
+          "deepEquals": {
+            "path": "/test"
+          }
+        },
+        {
+          "deepEquals": {
+            "query": {}
+          }
+        },
+        {
+          "deepEquals": {
+            "body": ""
+          }
+        },
+        {
+          "deepEquals": {
+            "method": "GET"
+          }
+        },
+        {
+          "deepEquals": {
+            "headers": {
+              "Host": "localhost:8000",
+              "User-Agent": "curl/7.79.1",
+              "Accept": "*/*"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "meta": {
+        "dir": "stubs/1662196503344-41288-5"
+      },
+      "predicates": [
+        {
+          "deepEquals": {
+            "path": "/test"
+          }
+        },
+        {
+          "deepEquals": {
+            "query": {
+              "q": "fuga"
+            }
+          }
+        },
+        {
+          "deepEquals": {
+            "body": ""
+          }
+        },
+        {
+          "deepEquals": {
+            "method": "GET"
+          }
+        },
+        {
+          "deepEquals": {
+            "headers": {
+              "Host": "localhost:8000",
+              "User-Agent": "curl/7.79.1",
+              "Accept": "*/*"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "meta": {
+        "dir": "stubs/1662196509368-41288-7"
+      },
+      "predicates": [
+        {
+          "deepEquals": {
+            "path": "/test"
+          }
+        },
+        {
+          "deepEquals": {
+            "query": {
+              "q": "hoge"
+            }
+          }
+        },
+        {
+          "deepEquals": {
+            "body": ""
+          }
+        },
+        {
+          "deepEquals": {
+            "method": "GET"
+          }
+        },
+        {
+          "deepEquals": {
+            "headers": {
+              "Host": "localhost:8000",
+              "User-Agent": "curl/7.79.1",
+              "Accept": "*/*"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "meta": {
+        "dir": "stubs/1662196513853-41288-9"
+      },
+      "predicates": [
+        {
+          "deepEquals": {
+            "path": "/test"
+          }
+        },
+        {
+          "deepEquals": {
+            "query": {}
+          }
+        },
+        {
+          "deepEquals": {
+            "body": ""
+          }
+        },
+        {
+          "deepEquals": {
+            "method": "GET"
+          }
+        },
+        {
+          "deepEquals": {
+            "headers": {
+              "Host": "localhost:8000",
+              "User-Agent": "curl/7.79.1",
+              "Accept": "*/*",
+              "Content-Type": "application/json"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "meta": {
+        "dir": "stubs/1662196518787-41288-11"
+      },
+      "predicates": [
+        {
+          "deepEquals": {
+            "path": "/test"
+          }
+        },
+        {
+          "deepEquals": {
+            "query": {}
+          }
+        },
+        {
+          "deepEquals": {
+            "body": "{\"Name\":\"sensuikan1973\", \"Age\":\"100\", \"Message\": \"fuga\"}"
+          }
+        },
+        {
+          "deepEquals": {
+            "method": "POST"
+          }
+        },
+        {
+          "deepEquals": {
+            "headers": {
+              "Host": "localhost:8000",
+              "User-Agent": "curl/7.79.1",
+              "Accept": "*/*",
+              "Content-Length": "56",
+              "Content-Type": "application/x-www-form-urlencoded"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "meta": {
+        "dir": "stubs/1662196525453-41288-13"
+      },
+      "predicates": [
+        {
+          "deepEquals": {
+            "path": "/test"
+          }
+        },
+        {
+          "deepEquals": {
+            "query": {}
+          }
+        },
+        {
+          "deepEquals": {
+            "body": "{\"Name\":\"sensuikan1973\", \"Age\":\"100\", \"Message\": \"fuga\"}"
+          }
+        },
+        {
+          "deepEquals": {
+            "method": "PUT"
+          }
+        },
+        {
+          "deepEquals": {
+            "headers": {
+              "Host": "localhost:8000",
+              "User-Agent": "curl/7.79.1",
+              "Accept": "*/*",
+              "Content-Length": "56",
+              "Content-Type": "application/x-www-form-urlencoded"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

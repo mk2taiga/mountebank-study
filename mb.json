@@ -1,0 +1,356 @@
+{
+  "imposters": [
+    {
+      "protocol": "http",
+      "port": 8000,
+      "recordRequests": false,
+      "stubs": [
+        {
+          "responses": [
+            {
+              "proxy": {
+                "to": "http://localhost:8080",
+                "predicateGenerators": [
+                  {
+                    "matches": {
+                      "path": true,
+                      "query": true,
+                      "body": true,
+                      "method": true,
+                      "headers": true
+                    }
+                  }
+                ],
+                "mode": "proxyAlways"
+              }
+            }
+          ]
+        },
+        {
+          "predicates": [
+            {
+              "deepEquals": {
+                "path": "/test"
+              }
+            },
+            {
+              "deepEquals": {
+                "query": {}
+              }
+            },
+            {
+              "deepEquals": {
+                "body": ""
+              }
+            },
+            {
+              "deepEquals": {
+                "method": "GET"
+              }
+            },
+            {
+              "deepEquals": {
+                "headers": {
+                  "Host": "localhost:8000",
+                  "User-Agent": "curl/7.79.1",
+                  "Accept": "*/*"
+                }
+              }
+            }
+          ],
+          "responses": [
+            {
+              "is": {
+                "statusCode": 200,
+                "headers": {
+                  "Content-Type": "application/json",
+                  "Date": "Sat, 03 Sep 2022 09:15:02 GMT",
+                  "Content-Length": "72",
+                  "Connection": "close"
+                },
+                "body": {
+                  "message": "GET:2022-09-03 18:15:02.018167 +0900 JST m=+1324.434198245"
+                },
+                "_mode": "text"
+              }
+            },
+            {
+              "is": {
+                "statusCode": 200,
+                "headers": {
+                  "Content-Type": "application/json",
+                  "Date": "Sat, 03 Sep 2022 09:16:48 GMT",
+                  "Content-Length": "72",
+                  "Connection": "close"
+                },
+                "body": {
+                  "message": "GET:2022-09-03 18:16:48.777084 +0900 JST m=+1431.164544697"
+                },
+                "_mode": "text"
+              }
+            }
+          ]
+        },
+        {
+          "predicates": [
+            {
+              "deepEquals": {
+                "path": "/test"
+              }
+            },
+            {
+              "deepEquals": {
+                "query": {
+                  "q": "fuga"
+                }
+              }
+            },
+            {
+              "deepEquals": {
+                "body": ""
+              }
+            },
+            {
+              "deepEquals": {
+                "method": "GET"
+              }
+            },
+            {
+              "deepEquals": {
+                "headers": {
+                  "Host": "localhost:8000",
+                  "User-Agent": "curl/7.79.1",
+                  "Accept": "*/*"
+                }
+              }
+            }
+          ],
+          "responses": [
+            {
+              "is": {
+                "statusCode": 200,
+                "headers": {
+                  "Content-Type": "application/json",
+                  "Date": "Sat, 03 Sep 2022 09:15:03 GMT",
+                  "Content-Length": "77",
+                  "Connection": "close"
+                },
+                "body": {
+                  "message": "GET:2022-09-03 18:15:03.339432 +0900 JST m=+1325.755492021:fuga"
+                },
+                "_mode": "text"
+              }
+            }
+          ]
+        },
+        {
+          "predicates": [
+            {
+              "deepEquals": {
+                "path": "/test"
+              }
+            },
+            {
+              "deepEquals": {
+                "query": {
+                  "q": "hoge"
+                }
+              }
+            },
+            {
+              "deepEquals": {
+                "body": ""
+              }
+            },
+            {
+              "deepEquals": {
+                "method": "GET"
+              }
+            },
+            {
+              "deepEquals": {
+                "headers": {
+                  "Host": "localhost:8000",
+                  "User-Agent": "curl/7.79.1",
+                  "Accept": "*/*"
+                }
+              }
+            }
+          ],
+          "responses": [
+            {
+              "is": {
+                "statusCode": 200,
+                "headers": {
+                  "Content-Type": "application/json",
+                  "Date": "Sat, 03 Sep 2022 09:15:09 GMT",
+                  "Content-Length": "77",
+                  "Connection": "close"
+                },
+                "body": {
+                  "message": "GET:2022-09-03 18:15:09.364917 +0900 JST m=+1331.781107846:hoge"
+                },
+                "_mode": "text"
+              }
+            }
+          ]
+        },
+        {
+          "predicates": [
+            {
+              "deepEquals": {
+                "path": "/test"
+              }
+            },
+            {
+              "deepEquals": {
+                "query": {}
+              }
+            },
+            {
+              "deepEquals": {
+                "body": ""
+              }
+            },
+            {
+              "deepEquals": {
+                "method": "GET"
+              }
+            },
+            {
+              "deepEquals": {
+                "headers": {
+                  "Host": "localhost:8000",
+                  "User-Agent": "curl/7.79.1",
+                  "Accept": "*/*",
+                  "Content-Type": "application/json"
+                }
+              }
+            }
+          ],
+          "responses": [
+            {
+              "is": {
+                "statusCode": 200,
+                "headers": {
+                  "Content-Type": "application/json",
+                  "Date": "Sat, 03 Sep 2022 09:15:13 GMT",
+                  "Content-Length": "72",
+                  "Connection": "close"
+                },
+                "body": {
+                  "message": "GET:2022-09-03 18:15:13.846543 +0900 JST m=+1336.262830653"
+                },
+                "_mode": "text"
+              }
+            }
+          ]
+        },
+        {
+          "predicates": [
+            {
+              "deepEquals": {
+                "path": "/test"
+              }
+            },
+            {
+              "deepEquals": {
+                "query": {}
+              }
+            },
+            {
+              "deepEquals": {
+                "body": "{\"Name\":\"sensuikan1973\", \"Age\":\"100\", \"Message\": \"fuga\"}"
+              }
+            },
+            {
+              "deepEquals": {
+                "method": "POST"
+              }
+            },
+            {
+              "deepEquals": {
+                "headers": {
+                  "Host": "localhost:8000",
+                  "User-Agent": "curl/7.79.1",
+                  "Accept": "*/*",
+                  "Content-Length": "56",
+                  "Content-Type": "application/x-www-form-urlencoded"
+                }
+              }
+            }
+          ],
+          "responses": [
+            {
+              "is": {
+                "statusCode": 200,
+                "headers": {
+                  "Content-Type": "application/json",
+                  "Date": "Sat, 03 Sep 2022 09:15:18 GMT",
+                  "Content-Length": "18",
+                  "Connection": "close"
+                },
+                "body": {
+                  "message": "fuga"
+                },
+                "_mode": "text"
+              }
+            }
+          ]
+        },
+        {
+          "predicates": [
+            {
+              "deepEquals": {
+                "path": "/test"
+              }
+            },
+            {
+              "deepEquals": {
+                "query": {}
+              }
+            },
+            {
+              "deepEquals": {
+                "body": "{\"Name\":\"sensuikan1973\", \"Age\":\"100\", \"Message\": \"fuga\"}"
+              }
+            },
+            {
+              "deepEquals": {
+                "method": "PUT"
+              }
+            },
+            {
+              "deepEquals": {
+                "headers": {
+                  "Host": "localhost:8000",
+                  "User-Agent": "curl/7.79.1",
+                  "Accept": "*/*",
+                  "Content-Length": "56",
+                  "Content-Type": "application/x-www-form-urlencoded"
+                }
+              }
+            }
+          ],
+          "responses": [
+            {
+              "is": {
+                "statusCode": 200,
+                "headers": {
+                  "Content-Type": "application/json",
+                  "Date": "Sat, 03 Sep 2022 09:15:25 GMT",
+                  "Content-Length": "17",
+                  "Connection": "close"
+                },
+                "body": {
+                  "message": "PUT"
+                },
+                "_mode": "text"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

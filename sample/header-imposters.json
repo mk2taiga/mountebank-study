@@ -17,7 +17,7 @@
                   "headers": true
                 }
               }],
-              "mode": "proxyOnce"
+              "mode": "proxyAlways"
             }
           }]
         }

@@ -1,0 +1,16 @@
+{
+  "is": {
+    "statusCode": 200,
+    "headers": {
+      "Content-Type": "application/json",
+      "Date": "Sat, 03 Sep 2022 09:15:25 GMT",
+      "Content-Length": "17",
+      "Connection": "close"
+    },
+    "body": {
+      "message": "PUT"
+    },
+    "_mode": "text",
+    "_proxyResponseTime": 2
+  }
+}
