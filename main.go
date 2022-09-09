@@ -64,6 +64,7 @@ func main() {
 			if r.URL.Query().Get("q") != "" {
 				res = res + ":" + r.URL.Query().Get("q")
 			}
+			time.Sleep(1 * time.Second)
 			toResponse(HogeFuga(res), w)
 		case http.MethodDelete:
 			toResponse(DELETE, w)

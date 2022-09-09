@@ -1,0 +1,87 @@
+{
+  "imposters": [
+    {
+      "protocol": "http",
+      "port": 8000,
+      "recordRequests": false,
+      "stubs": [
+        {
+          "predicates": [
+            {
+              "deepEquals": {
+                "path": "/test"
+              }
+            },
+            {
+              "deepEquals": {
+                "query": {}
+              }
+            },
+            {
+              "deepEquals": {
+                "body": ""
+              }
+            },
+            {
+              "deepEquals": {
+                "method": "GET"
+              }
+            },
+            {
+              "deepEquals": {
+                "headers": {
+                  "Host": "localhost:8000",
+                  "User-Agent": "curl/7.79.1",
+                  "Accept": "*/*",
+                  "Content-Type": "application/json"
+                }
+              }
+            }
+          ],
+          "responses": [
+            {
+              "is": {
+                "statusCode": 200,
+                "headers": {
+                  "Content-Type": "application/json",
+                  "Date": "Fri, 09 Sep 2022 08:00:11 GMT",
+                  "Content-Length": "70",
+                  "Connection": "close"
+                },
+                "body": {
+                  "message": "GET:2022-09-09 17:00:10.848235 +0900 JST m=+69.777042369"
+                },
+                "_mode": "text"
+              },
+              "behaviors": [
+                {
+                  "wait": 1141
+                }
+              ]
+            },
+            {
+              "is": {
+                "statusCode": 200,
+                "headers": {
+                  "Content-Type": "application/json",
+                  "Date": "Fri, 09 Sep 2022 08:00:16 GMT",
+                  "Content-Length": 77,
+                  "Connection": "close"
+                },
+                "body": {
+                  "message": "GET:2022-09-09 17:00:15.621171 +0900 JST m=+74.549871958"
+                },
+                "_mode": "text"
+              },
+              "behaviors": [
+                {
+                  "wait": 1003
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
